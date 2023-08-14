@@ -13,7 +13,15 @@ import sys
 #
 
 def miniMaxSum(arr):
-    # Write your code here
+    total = sum(arr)
+
+    min_element = min(arr)
+    max_element = max(arr)
+
+    min_sum = total - max_element
+    max_sum = total - min_element
+
+    print(min_sum, max_sum)
 
 if __name__ == '__main__':
 
